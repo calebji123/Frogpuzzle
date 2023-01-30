@@ -1,4 +1,4 @@
-(0) tutorial
+(1/1/0) tutorial
 [
 ░░░░░░░░
 ░WB   H░
@@ -6,7 +6,7 @@
 ░░░░░░░░
 ]
 
-(1) the first level
+(1/1/0) the first level
 [
 ░░░░░░░░░
 ░3W  ░  ░
@@ -18,7 +18,7 @@
 ░░░░░░░░░
 ]
 
-(1) tutorial 3
+(1/1/0) tutorial 3
 [
 ░░░░░░░░░
 ░W  ░4  ░
@@ -30,7 +30,7 @@
 ░░░░░░░░░
 ]
 
-(1) this level is broken
+(1/1/0) this level is broken
 [
 ░░░░░░░░
 ░    KW░
@@ -46,7 +46,7 @@
 ░░░░░░░░
 ]
 
-(2) real level 1
+(2/1/0) real level 1
 [
 ░▒▒▒W▒▒▒▒
 ░  ▒ ▒  ▒
@@ -60,7 +60,7 @@
 ░░░░░░░░░
 ]
 
-(4) real level 1.2
+(3/2/1) real level 1.2
 [
 ░▒▒▒W▒▒▒▓
 ░  ▒ ▒  ▓
@@ -74,7 +74,7 @@
 ░░░░░░░░░
 ]
 
-(2) Together
+(2/1/1) Together
 [
 ░░░░░░░░░░░░░
 ░X2     3 ░W░
@@ -88,28 +88,28 @@
 ░░░░░░░░░░░░░
 ]
 
-(3) left and right
+(3/3/0) left and right
 [
 ░░░░░░░░░
 ░W░    F░
 ░G ▒BB F░
-░  ▒ B F░
+░ ░  B F░
 ░ ▒▒▒▒▒ ░
 ░ ▒ A ▒ ░
 ░░  H  ░░
 ░ ▒ A ▒ ░
 ░ ▒▒▒▒▒ ░
-░ZP   EC░
+░ZP  NEC░
 ░ Y   CC░
 ░   ░░░M░
 ░ZZ ░G M░
 ░░░░░░░░░
 ]
 
-(4) lock
+(4/3/1) lock
 [
 ░░░░░░░░░░░░
-░ 12░4░6   ░
+░░12░4░6   ░
 ░W123456H  ░
 ░░  3 5 ░  ░
 ░░      ░  ░
@@ -121,4 +121,57 @@
 ░ 5B 3C  TT░
 ░YYB CC  ░T░
 ░░░░░░░░░░░░
+]
+
+(2/0/2) Minecraft Painting
+[
+░░░░░░░░░░░░░░░░
+░111222  4455 W░
+░661777388  5  ░
+░669 7 8804qqq ░
+░ w 99er 00t q ░
+░ wweeeryy t   ░
+░   uu 2 yioopp░
+░   ua a iioo p░
+░H   aaa issssp░
+░░░░░░░░░░░░░░░░
+]
+
+(1/1/0) Switches
+[
+░░░░░░░░░░░░░░░
+░W 1     ░ ░ ░░
+░  12         ░
+░  12  H  a b ░
+░░░░░     ░ ░ ░
+░   c░    ░a░b░
+░2   ░        ░
+░2b c░ ░░░   c░
+░1a  ░    c ░░░
+░   d░ ░░░   d░
+░a cb░    d   ░
+░░░░░░░░░░░░░░░
+]
+
+(5/1/4) Crusher
+[
+░░░░░░░░░░░░░░░░░░░░░░
+░▒▒▒▒▒▒▒▒░▒▒▒▒▒▒▒▒▒▒▒░
+░        ▒   aaa     ░
+░bbb      ccc aa H   ░
+░bbb ddd   cc        ░
+░b   d       e e ░ ░ ░
+░f   dzz ░gg hiii░   ░
+░f   ddd ░ g hii ░ ░░░
+░ jjfkk  ░ gghh  ░ ░W░
+░  jj   k░   lllm░ ░ ░
+░  jj   k░ nn nlm░ ░ ░
+░  jjoo k░ nnnnlm░ ░ ░
+░q    o  ░       ░ ░ ░
+░qqqq o o░   ss  ░ ░ ░
+░  q  ooo░p  spp ░ ░▒░
+░        ░ppppprr░ ░ ░
+░        ░▓▓▓▓▓▓▓░▓  ░
+░        ░▓▓▓▓▓▓▓░   ░
+░░░░░░░░░░░░░░░░░░░░░░
 ]
