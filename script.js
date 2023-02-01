@@ -13,10 +13,7 @@ e: pull (you -> them)<br>
 z: undo<br><br>
 Level difficulty rating: <br>
 (overall difficulty/fun difficulty/frustrating difficulty)<br><br>
-Accepting puzzle suggestions, name suggestions and bug reports.<br>
-Known bugs:<br>
-Tongue duplication/block movement on tongue, deleting block<br>
-Movement outside of boundary (might not be a bug)`
+Accepting puzzle suggestions, name suggestions and bug reports.<br>`
 infobutton.onclick = () => {
    newAlert("l", message)
 }

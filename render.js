@@ -26,6 +26,7 @@ function render(board, hooks, save = true) {
     canvas.width = height
     canvas.height = width
     ctx.clearRect(0, 0, canvas.width, canvas.height)
+    console.log(board)
     for (let x = 0; x < board.length; x++) {
         for (let y = 0; y < board[0].length; y++) {
             nearby = checkNeighbours(board, x, y, equalsId)
