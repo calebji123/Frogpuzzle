@@ -152,18 +152,26 @@ function undo() {
         past.pop()
     }
 }
-
+var won = false
 function check_for_a_win() {
     for (let i = 0; i < dirs.length; i++) {
         const e = gttitss([dirs[i][0] + hook[0][0], dirs[i][1] + hook[0][1]])
         if (e && e.type == 'win') {
-            nae.innerHTML+=(' well done')
+            if (!won) {
+                newAlert("s", "Congrats, you won!")
+            }
+            won = true
             return true
         }
     }
     return false
 }
 
+
+function reset() {
+    past = []
+    won = false
+}
         
 //Event listeners
 document.addEventListener("keydown", (e)=>{
