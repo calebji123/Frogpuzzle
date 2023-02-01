@@ -1,5 +1,7 @@
 const nae = document.getElementById('name')
 const desc = document.getElementById('desc')
+var canvas = document.getElementById("myCanvas");
+var titleelem = document.getElementById("title")
 const re = /([^\n-]*?)\r?\n\[\r\n(.*?)\]/gms
 
 var array = []
@@ -10,7 +12,6 @@ fetch('puzzos.txt').then( r => r.text() ).then( t => {
         const ele = document.createElement('div')
         ele.innerHTML = `${i+1}: ${array[i][1]}<br>`
         ele.onclick = () => {
-            console.log(i)
             maien(i)
             desc.style.display = 'none'
         }
@@ -24,9 +25,16 @@ var width = 0
 var height = 0
 
 function maien(thenumber) {
-    //const thenumber = parseInt(prompt(`Please enter a number from 1 to ${array.length}`))
     nae.innerHTML = array[thenumber][1]
+    nae.style.display = "inline-block"
     lines = array[thenumber][2].split(/\r?\n/)
+    canvas.style.display = "inline-block"
+    titleelem.style.display = "none"
+
+    gboard = []
+    hook = []
+    width = 0
+    height = 0
 
     const theotherstuff = ['H', 'L', 'W']
     already_seen = [' ']

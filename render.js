@@ -2,7 +2,7 @@ var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
 const colorScheme = {
-    hook:'grey'
+    hook:'pink'
 }
 
 function render(board, hooks, save = true) {
@@ -18,7 +18,7 @@ function render(board, hooks, save = true) {
         }
     }
 
-    const blockSize = 40
+    const blockSize = Math.min(40, 600 / board.length)
     const width = board.length * blockSize
     const height = board[0].length * blockSize
 
@@ -38,6 +38,7 @@ function render(board, hooks, save = true) {
                     ctx.fillStyle = colors[board[x][y].id - 1]
                     if (board[x][y].deco && board[x][y].deco.wall) {
                         ctx.strokeRect((y + 0.15) * blockSize, (x + 0.15) * blockSize, blockSize * 0.7, blockSize * 0.7)
+                        ctx.fillStyle = fillWall(board[x][y].id)
                     }
                     fillPartial(x, y, blockSize, nearby, true, true)
 
@@ -101,7 +102,6 @@ function fillPartial(y, x, blockSize, directions, circle = false, modst=false) {
         ctx.fill();
     }
     if (modst && directions.total==0) {
-        console.log('yeah')
         ctx.lineWidth = 5;
         ctx.lineCap = 'round';
         ctx.strokeStyle = ctx.fillStyle
@@ -141,4 +141,12 @@ function checkNeighbours(gameState, x, y, func) {
         base.total += 1
     }
     return base
+}
+
+count = []
+function fillWall(id) {
+    if(!count.includes(id)){
+        count.push(id)
+    }
+    return wall_colors[count.indexOf(id)]
 }

@@ -6,11 +6,11 @@ const colors = [
     "Azure",
     "Beige",
     "Bisque",
-    "Black",
+    // "Black",
     "BlanchedAlmond",
     "Blue",
     "BlueViolet",
-    "Brown",
+    // "Brown",
     "BurlyWood",
     "CadetBlue",
     "Chartreuse",
@@ -143,10 +143,16 @@ const colors = [
     "Turquoise",
     "Violet",
     "Wheat",
-    "White",
+    // "White",
     "WhiteSmoke",
     "Yellow",
     "YellowGreen",
   ];
 
 colors.sort(() => Math.random() - 0.5)
+
+const wall_colors = [
+  "Black",
+  "White",
+  "Brown",
+]

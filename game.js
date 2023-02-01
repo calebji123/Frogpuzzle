@@ -68,10 +68,10 @@ function is_the_move_ok(all_parts, direct) {
     all_parts.forEach(part=>{
         move_location = [part[0] + moving[direct][0], part[1] + moving[direct][1]]
         entry = gttitss(move_location)
+        console.log(entry)
         move_onto_self = (e) => {
             return e[0] == move_location[0] && e[1] == move_location[1]
         }
-        console.log(all_parts, move_location, all_parts.some(move_onto_self))
         if (entry && (entry.id != 0 && !all_parts.some(move_onto_self)) && (!all_parts.includes(move_location))){
             yep_the_move_is_ok = false
         }
@@ -93,6 +93,7 @@ function move_tiles(all_parts, direct) {
 }
 
 function move_hook(direct) {
+    console.log("move",hook)
     if (hook.length > 0) {
         target = [lhook()[0] + moving[direct][0], lhook()[1] + moving[direct][1]]
         end = gttitss(target)
@@ -112,6 +113,7 @@ function move_hook(direct) {
 }
 
 function pull_hook() {
+    console.log("pulled", hook)
     if (hook.length > 1) {
         end_hook = [lhook()[0], lhook()[1]]
         hook_block = '0'
@@ -128,11 +130,8 @@ function pull_hook() {
                 move_tiles(hooked, opposite[lhook()[2]])
                 if (hook.length > 2) {
                     last_link = [lhook()[0] - llhook()[0], llhook()[1] - lhook()[1]]
-                    console.log(dir_to_string(last_link), opposite[lhook()[2]])
                     if (dir_to_string(last_link) == opposite[lhook()[2]]) {
-                        console.log(llhook())
                         sllhook([...llhook().slice(0,2), lhook()[2]])
-                        console.log(llhook())
                         change_tile(llhook().slice(0,2), lhook()[2][0])
                     }
                 }
@@ -150,6 +149,7 @@ function retract_hook() {
 }
 
 function undo() {
+    console.log("undo")
     if (past.length > 1) {
         const out = JSON.parse(JSON.stringify(past[past.length-2]))
         gboard = out[0]
