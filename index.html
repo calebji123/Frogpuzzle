@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="centered">
+    <h1 id="title">Frogame</h1>
+    <h3 id="name"></h3>
+    <div id="desc">
+        loading
+    </div>
+    <canvas id="myCanvas" style="border-style: solid;"></canvas>
+    <div id="bottombar"><a class="clicks" id="back">Back</a> | <a class="clicks" id="info">Info</a></div>
+    <div class="medium" id="alertMain">
+        <div id="alertBox">
+            <div id="closeButton">
+                <input type="button" class="button" value="x" id="alertCloseButton">
+              </div>
+          <div class="mediumMess" id="alertMessage">
+            <p id="alertText"></p>
+          </div>
+        </div>
+      </div>    
+    <script src="colors.js"></script>
+    <script src="parser.js"></script>
+    <script src="render.js"></script>
+    <script src="game.js"></script>
+    <script src="script.js"></script>
+    <div id="version">version 0.8 closed beta</div>
+</body>
+</html>
